@@ -14,3 +14,40 @@
 ## About Me
 
 A motivated student at the Faculty of Information Technology, Lublin University of Technology, specializing in Computer Science. Skilled in React, Next.js, TypeScript, and SQL, with commercial experience in developing web applications and creating efficient database queries using Node.js and Prisma. My priority is to keep improving as a frontend developer while staying up-to-date with the latest technologies and best practices.
+
+## Skills
+
+- **Languages:** JavaScript, TypeScript, Node.js, SQL
+- **Frontend:** React 18+, Next.js 15 (App Router), Tailwind CSS, shadcn/ui, Framer Motion
+- **State & Data:** Redux Toolkit, RTK Query, React Query, Zustand
+- **Backend:** Node.js (Express), Prisma ORM, REST
+- **Databases:**  MySQL, SQLite
+- **Auth & Security:** JWT, cookies/SSR, role-based access
+- **DevOps & Tools:** Git/GitHub/GitLab, Docker, Postman
+- **Testing:** Vitest, Testing Library, Playwright (basics)
+
+## Code Example (Codewars)
+
+**Task:** Reverse words with 5+ letters (“Stop gninnipS My sdroW!”)
+
+```ts
+export function spinWords(sentence: string): string {
+  return sentence
+    .split(' ')
+    .map(w => (w.length >= 5 ? w.split('').reverse().join('') : w))
+    .join(' ');
+}
+
+// console.log(spinWords("Hey fellow warriors")) // "Hey wollef sroirraw"
+```
+
+## Projects
+
+- **REST Client (Lightweight Postman Clone)**  
+  - **Tech:** React, Next.js, TypeScript, Supabase, next-i18next  
+  - **Code:** [GitHub Repo](https://github.com/xsetiqq/Apicorn)  
+  - **Deploy:** <https://apicorn.netlify.app/en>
+
+- **Belinnovation Corporate Website** - Lead Frontend  
+  - **Code:** [Private repository (no public link)]
+  - **Deploy:** <https://belinnovation.by/en>
