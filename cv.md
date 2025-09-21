@@ -51,3 +51,18 @@ export function spinWords(sentence: string): string {
 - **Belinnovation Corporate Website** - Lead Frontend  
   - **Code:** [Private repository (no public link)]
   - **Deploy:** <https://belinnovation.by/en>
+
+## Work Experience
+
+- **Frontend Developer - Belinnovation (Remote) - Jan 2025 - Present**
+
+## Education & Courses
+
+- **Lublin University of Technology — Computer Science & Telecommunications (2023–Present)**
+- **The Rolling Scopes School - [React 2025 Q1 - Certificate of Completion (April 28, 2025)](https://app.rs.school/certificate/nmejq0vk)**
+
+## Languages
+
+- **English: B2 (Upper-Intermediate)**
+- **Polish: C1**
+- **Russian: Native**
