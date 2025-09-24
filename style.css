@@ -409,27 +409,37 @@ height: fit-content;
 @media (max-width: 768px) {
   .container { max-width: 720px; padding: 14px 12px; }
 
-  .header { top: 8px; margin-bottom: 16px; }
-  .nav-bar { padding: 4px 8px; gap: 4px; }
-  .nav-link { padding: 6px 10px; font-size: 13px; }
-  .icon { width: 16px; height: 16px; }
+  /* компактный хедер уже здесь */
+  .header { top: 6px; margin-bottom: 14px; }
+  .nav-bar { padding: 2px 6px; gap: 2px; }
+  .nav-link { font-size: 0; padding: 8px; border-radius: 50%; }
+  .nav-link .icon { width: 20px; height: 20px; }
 
-  .section-about-container { flex-direction: column; gap: 20px; align-items: flex-start; }
+  .section-about-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
   .about-text { width: 100%; }
 
-  h1 { font-size: clamp(28px, 7vw, 36px); }
+  h1 { font-size: clamp(28px, 7vw, 34px); }
   h2 { font-size: clamp(18px, 4.5vw, 22px); }
   p { font-size: 14px; }
 
-  .info-bar { gap: 12px; font-size: 13px; }
+  .info-bar { gap: 10px; font-size: 13px; justify-content: center; flex-wrap: wrap; }
 
-  .btn-bar { gap: 10px; flex-wrap: wrap; }
-  .btn-view, .btn-outline { width: 100%; justify-content: center; }
+  .btn-bar { gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .btn-view, .btn-outline { width: 100%; max-width: 320px; justify-content: center; }
 
-  .photo-wrapper { width: 100%; justify-content: flex-start; }
+  .photo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .MainPhoto { width: min(72vw, 280px); height: min(72vw, 280px); }
 
-  .contacts-skills { display: flex; flex-direction: column; gap: 24px; }
+  .contacts-skills { display: flex; flex-direction: column; gap: 24px; text-align: left; }
 
   pre { font-size: 13px; }
 
@@ -437,17 +447,10 @@ height: fit-content;
   hr { margin: 28px auto; }
 }
 
-@media (max-width: 560px) {
-  .container { padding: 12px 10px; }
-
-  .header { top: 4px; margin-bottom: 12px; }
-  .nav-bar { padding: 2px 6px; gap: 2px; }
-  .nav-link { font-size: 0; padding: 8px; border-radius: 50%; }
-  .nav-link .icon { width: 20px; height: 20px; }
-
+@media (max-width: 480px) {
   h1 { font-size: clamp(24px, 8vw, 30px); }
   h2 { font-size: 18px; }
-  .info-bar { font-size: 12px; }
+  .info-bar { font-size: 12px; flex-direction: column; gap: 6px; }
 
   .MainPhoto { width: 78vw; height: 78vw; }
 
@@ -460,7 +463,7 @@ height: fit-content;
   .rs-logo { width: 84px; }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 360px) {
   .btn-view, .btn-outline { padding: 10px 12px; font-size: 13px; }
   .nav-link .icon { width: 18px; height: 18px; }
   .MainPhoto { width: 84vw; height: 84vw; }
