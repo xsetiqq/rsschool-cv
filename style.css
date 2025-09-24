@@ -163,7 +163,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vh;
+  width: auto;       
+  max-width: 100%;
 }
 .section-about-container {
  display: flex;
@@ -447,7 +448,7 @@ height: fit-content;
 
   pre { font-size: 13px; }
 
-  .rs-logo { width: 96px; }
+  .rss-logo { width: 96px; }
   hr { margin: 28px auto; }
 }
 
@@ -464,7 +465,7 @@ height: fit-content;
   .projects-list strong { margin-bottom: 4px; }
 
   .footer { flex-direction: column; gap: 8px; padding: 12px; text-align: center; }
-  .rs-logo { width: 84px; }
+  .rss-logo { width: 84px; }
 }
 
 @media (max-width: 360px) {
